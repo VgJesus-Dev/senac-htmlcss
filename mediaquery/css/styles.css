@@ -1,0 +1,37 @@
+/* Media Query */
+h1{
+    color: orangered;
+}
+
+/* Quando for menos de 500px (celular) o título ficará verde, se for mais que isso será laranja, depende do tamanho da tela. */
+@media screen and (max-width: 500px){
+    h1{
+        color: greenyellow;
+    }
+}
+
+/* min-width (quando for mobile primeiro, inves de desktop) */
+
+p{
+    background-color: aquamarine;
+    color: black;
+}
+
+/* Aqui ele vai acusar que acima de 800px é desktop e abaixo já começa com mobile. */
+@media screen and (min-width: 800px){
+    p{
+        background-color: black;
+        color: yellow;
+    }
+}
+
+/* Landscape ocultado */
+h2{
+    display: none;
+}
+/* Quando coloca o celular/tablet em modo paisagem aparece, se ficar em pé some */
+@media screen and (orientation: landscape){
+    h2{
+        display: block;
+    }
+}
